@@ -1,24 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PLO-re-dwy">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="yHj-SY-mL2">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="PLO-re-dwy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eyc-Ww-72W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5BA-DN-L6k" kind="relationship" relationship="rootViewController" id="cMv-51-rg8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rf-VY-hJz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e7y-kz-QYT">
+            <objects>
+                <viewController id="5BA-DN-L6k" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uwf-Ki-VuU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUIPU AGENDA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WM-rX-3cU">
+                                <rect key="frame" x="103" y="172" width="168" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7s-Xt-F5y">
+                                <rect key="frame" x="49" y="277" width="276" height="81.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81.5" id="ow1-mb-y0r"/>
+                                    <constraint firstAttribute="width" constant="276" id="tcN-CF-uuG"/>
+                                </constraints>
+                                <string key="text">Nace de la idea de ayudar a los
+estudiantes dandoles una
+herramienta para la 
+organizacion y aprendisaje</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I82-cJ-R1k">
+                                <rect key="frame" x="151" y="477" width="73" height="30"/>
+                                <state key="normal" title="INGRESAR"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8WM-rX-3cU" firstAttribute="leading" secondItem="MhV-xi-Fj6" secondAttribute="leading" constant="103" id="034-tV-ijJ"/>
+                            <constraint firstItem="MhV-xi-Fj6" firstAttribute="trailing" secondItem="8WM-rX-3cU" secondAttribute="trailing" constant="104" id="11Q-ss-VKO"/>
+                            <constraint firstItem="MhV-xi-Fj6" firstAttribute="bottom" secondItem="I82-cJ-R1k" secondAttribute="bottom" constant="160" id="9VI-W6-YPd"/>
+                            <constraint firstItem="a7s-Xt-F5y" firstAttribute="leading" secondItem="MhV-xi-Fj6" secondAttribute="leading" constant="49" id="BN8-xl-9eh"/>
+                            <constraint firstItem="I82-cJ-R1k" firstAttribute="leading" secondItem="MhV-xi-Fj6" secondAttribute="leading" constant="151" id="TA4-ny-z5j"/>
+                            <constraint firstItem="MhV-xi-Fj6" firstAttribute="trailing" secondItem="a7s-Xt-F5y" secondAttribute="trailing" constant="50" id="ZSb-i1-zTf"/>
+                            <constraint firstItem="I82-cJ-R1k" firstAttribute="top" secondItem="a7s-Xt-F5y" secondAttribute="bottom" constant="118.5" id="dWu-mW-IXQ"/>
+                            <constraint firstItem="8WM-rX-3cU" firstAttribute="top" secondItem="MhV-xi-Fj6" secondAttribute="top" constant="128" id="nua-fG-CKK"/>
+                            <constraint firstItem="a7s-Xt-F5y" firstAttribute="top" secondItem="8WM-rX-3cU" secondAttribute="bottom" constant="76" id="pFz-5P-Acr"/>
+                            <constraint firstItem="MhV-xi-Fj6" firstAttribute="trailing" secondItem="I82-cJ-R1k" secondAttribute="trailing" constant="151" id="vhv-M6-sEC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MhV-xi-Fj6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="khn-lS-6KB"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jut-yt-qzt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="661.60000000000002" y="116.49175412293854"/>
         </scene>
     </scenes>
 </document>
