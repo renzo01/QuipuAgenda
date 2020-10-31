@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C80EE6A3254E224400C2377D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80EE6A2254E224400C2377D /* LoginController.swift */; };
 		C8D07FED254131F100941FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D07FEC254131F100941FB1 /* AppDelegate.swift */; };
 		C8D07FEF254131F100941FB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D07FEE254131F100941FB1 /* SceneDelegate.swift */; };
 		C8D07FF1254131F100941FB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D07FF0254131F100941FB1 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C80EE6A2254E224400C2377D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		C8D07FE9254131F100941FB1 /* QuipuAgenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuipuAgenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D07FEC254131F100941FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8D07FEE254131F100941FB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				C8D07FFA254131F800941FB1 /* LaunchScreen.storyboard */,
 				C8D07FFD254131F800941FB1 /* Info.plist */,
 				C8D07FF5254131F100941FB1 /* QuipuAgenda.xcdatamodeld */,
+				C80EE6A2254E224400C2377D /* LoginController.swift */,
 			);
 			path = QuipuAgenda;
 			sourceTree = "<group>";
@@ -97,7 +100,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Equipo Dinamita";
 				TargetAttributes = {
 					C8D07FE8254131F100941FB1 = {
@@ -145,6 +148,7 @@
 				C8D07FF1254131F100941FB1 /* ViewController.swift in Sources */,
 				C8D07FED254131F100941FB1 /* AppDelegate.swift in Sources */,
 				C8D07FEF254131F100941FB1 /* SceneDelegate.swift in Sources */,
+				C80EE6A3254E224400C2377D /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +200,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -256,6 +261,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -290,7 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuipuAgenda/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuipuAgenda/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
