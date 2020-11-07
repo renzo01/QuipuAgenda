@@ -201,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="1437.5999999999999" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--Center Controller-->
         <scene sceneID="uh1-Go-bU8">
             <objects>
-                <viewController id="Uhh-eB-mWk" sceneMemberID="viewController">
+                <viewController id="Uhh-eB-mWk" customClass="CenterController" customModule="QuipuAgenda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t6Q-nX-qkY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,7 +221,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmb-pP-kMf">
-                                        <rect key="frame" x="254" y="35" width="40" height="30"/>
+                                        <rect key="frame" x="239" y="35" width="55" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.66666666666666663" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Editar">
@@ -287,6 +287,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fjr-MU-Yui"/>
+                    <connections>
+                        <outlet property="btnEditProfile" destination="rmb-pP-kMf" id="YdT-dF-kxx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aef-qW-rSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
