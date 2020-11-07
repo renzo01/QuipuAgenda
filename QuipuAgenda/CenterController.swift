@@ -15,7 +15,7 @@ class CenterController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        btnEditProfile.layer.cornerRadius = 25.0;
     }
     
 
