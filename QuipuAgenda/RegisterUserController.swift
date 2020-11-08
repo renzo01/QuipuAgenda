@@ -1,5 +1,5 @@
 //
-//  CenterController.swift
+//  RegisterUserController.swift
 //  QuipuAgenda
 //
 //  Created by Renzo Gomez on 11/7/20.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class CenterController: UIViewController {
+class RegisterUserController: UIViewController {
 
-    @IBOutlet weak var btnEditProfile: UIButton!
+    @IBOutlet weak var btnRegistrar: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        btnEditProfile.layer.cornerRadius = 15.0;
+        btnRegistrar.layer.cornerRadius = 25
     }
     
 
