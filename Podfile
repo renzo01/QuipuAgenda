@@ -6,5 +6,5 @@ target 'QuipuAgenda' do
   use_frameworks!
 
   # Pods for QuipuAgenda
-  
+  pod 'SideMenu'
 end
