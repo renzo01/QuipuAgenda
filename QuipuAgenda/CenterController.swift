@@ -13,7 +13,7 @@ class CenterController: UIViewController {
     @IBOutlet weak var btnEditProfile: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        menu = SideMenuNavigationController(rootViewController: MenuListController())
+        menu = SideMenuNavigationController(rootViewController: MenuOptionsController())
         menu?.leftSide = true
         menu?.setNavigationBarHidden(true, animated: false)
         
