@@ -7,4 +7,5 @@ target 'QuipuAgenda' do
 
   # Pods for QuipuAgenda
   pod 'SideMenu'
+  pod 'CleanyModal'
 end
